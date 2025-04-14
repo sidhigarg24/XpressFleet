@@ -1,0 +1,13 @@
+1) implemented welcome E-mail when user signed up
+
+2) Implemented reset password throuugh email
+
+3)implemented update User role 
+
+4)fix this middleware for admin access only
+
+5)Implemented the functionality for search, filter and pagination of product
+
+6)While registering checked whether the email id is already registered or not, if registered then printed the msg in postman as "Email already registered."
+
+7)delete review implemented and also take care of the AVG of the review
