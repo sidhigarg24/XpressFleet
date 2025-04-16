@@ -90,6 +90,7 @@ Explore the live API collection here:
 🔗 [Postman Workspace](https://www.postman.com/solar-escape-571108/workspace/54fcd003-1f88-42da-8172-cbac9cd575cf/collection/15790133-eb941792-d2d5-41dd-8b20-b089d6649157)
 
 ---
+🧭 To ensure smooth testing of the API collection via your browser, kindly install the Postman Agent for Windows if it is not already installed on your system.
 
 ## 🔥 Key Features
 
