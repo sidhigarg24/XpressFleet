@@ -92,6 +92,13 @@ Explore the live API collection here:
 ---
 🧭 To ensure smooth testing of the API collection via your browser, kindly install the Postman Agent for Windows if it is not already installed on your system.
 
+**- Output based on default scaffold:**
+![image](https://github.com/user-attachments/assets/badfc19e-91b7-43c5-aec0-bc7196a29df8)
+
+![image](https://github.com/user-attachments/assets/174c3c66-fe5a-4d15-917d-6c41afb84dc7)
+
+
+
 ## 🔥 Key Features
 
 - 🔐 **JWT Authentication** for secure user access.
