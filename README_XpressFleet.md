@@ -128,10 +128,25 @@ Explore the live API collection here:
 📦 dotenv – Environment variable configuration
 
 
+
+
+
+
+
 **📌 APIs Used in XpressFleet (Backend)**
 
 
+
+
+
+
 **📦 Product APIs**
+
+
+
+
+
+
 
 
 📥 GET /product/products – Retrieve all products (supports pagination)
@@ -159,7 +174,22 @@ Explore the live API collection here:
 🗑️ DELETE /product/review/:reviewId – Delete a specific review
 
 
+
+
+
+
+
+
+
+
 **👤 User Authentication & Profile APIs**
+
+
+
+
+
+
+
 
 
 📝 POST /user/register – Register a new user
@@ -179,7 +209,20 @@ Explore the live API collection here:
 📝 PUT /user/profile/update – Update name or email
 
 
+
+
+
+
+
+
+
+
 **🛡️ Admin APIs**
+
+
+
+
+
 
 
 👥 GET /admin/users – Get all users
@@ -191,7 +234,18 @@ Explore the live API collection here:
 🔧 PUT /admin/user/update – Update user role & profile
 
 
+
+
+
+
+
 ****📦 Order APIs**
+
+
+
+
+
+
 
 
 🛒 POST /order/new – Place a new order
@@ -203,6 +257,12 @@ Explore the live API collection here:
 📦 GET /admin/orders – Get all placed orders (admin)
 
 🔧 PUT /admin/order/:id – Update order details (admin)
+
+
+
+
+
+
 
 
 
