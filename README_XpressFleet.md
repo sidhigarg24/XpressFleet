@@ -110,6 +110,23 @@ Explore the live API collection here:
 
 ---
 
+🔧 Tools & Packages Used
+Node.js + Express.js – Backend and routing
+
+MongoDB + Mongoose – Database and schema modeling
+
+JWT – Authentication with token-based login
+
+bcrypt – Password hashing for security
+
+Nodemailer – Sending emails (welcome + password reset)
+
+dotenv – Environment variable management
+
+Postman – API testing
+
+Cookie-parser – Handling cookies for auth tokens
+
 ## 👨‍💻 Author & Contact
 
 **👤 Author:** Sidhi Garg  
