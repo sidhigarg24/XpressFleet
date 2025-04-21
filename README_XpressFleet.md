@@ -109,23 +109,92 @@ Explore the live API collection here:
 - 🧪 **Postman Tested** endpoints for robust API handling.
 
 ---
+🛠️ Tools & Packages Used
+⚙️ Node.js + Express.js – Backend runtime & routing
 
-🔧 Tools & Packages Used
-Node.js + Express.js – Backend and routing
+🗄️ MongoDB + Mongoose – NoSQL database & schema modeling
 
-MongoDB + Mongoose – Database and schema modeling
+🔐 JWT – Token-based authentication
 
-JWT – Authentication with token-based login
+🔑 bcrypt – Password hashing and security
 
-bcrypt – Password hashing for security
+📬 Nodemailer – Email services for welcome & reset links
 
-Nodemailer – Sending emails (welcome + password reset)
+🧪 Postman – API testing and validation
 
-dotenv – Environment variable management
+🔒 cookie-parser – Manage HTTP-only auth cookies
 
-Postman – API testing
+📦 dotenv – Environment variable configuration
 
-Cookie-parser – Handling cookies for auth tokens
+📌 APIs Used in XpressFleet (Backend)
+
+📦 Product APIs
+
+📥 GET /product/products – Retrieve all products (supports pagination)
+
+➕ POST /product/add – Add a new product
+
+🔄 PUT /product/update/:id – Update product details
+
+❌ DELETE /product/delete/:id – Delete a product
+
+🔍 GET /product/:id – Get product details by ID
+
+🔎 GET /product/search – Search products by keyword
+
+📂 GET /product/category/:category – Filter products by category
+
+💰 GET /product/price – Filter products by price range
+
+⭐ GET /product/rating – Filter products by rating
+
+💬 PUT /product/rate/:id – Rate a product
+
+📝 GET /product/reviews/:id – Get all reviews for a product
+
+🗑️ DELETE /product/review/:reviewId – Delete a specific review
+
+👤 User Authentication & Profile APIs
+
+📝 POST /user/register – Register a new user
+
+🔑 POST /user/login – User login
+
+🚪 GET /user/logout – Logout user
+
+🔑 POST /user/password/forgot – Send password reset link via email
+
+🔒 PUT /user/password/reset/:token – Reset password using token
+
+👤 GET /user/profile – Get logged-in user info
+
+🔄 PUT /user/password/update – Update current password
+
+📝 PUT /user/profile/update – Update name or email
+
+🛡️ Admin APIs
+
+👥 GET /admin/users – Get all users
+
+👤 GET /admin/user/:id – Get single user details
+
+❌ DELETE /admin/user/:id – Delete user
+
+🔧 PUT /admin/user/update – Update user role & profile
+
+📦 Order APIs
+
+🛒 POST /order/new – Place a new order
+
+📜 GET /order/:id – Get details of a single order
+
+🛍️ GET /orders/me – Get all orders of the logged-in user
+
+📦 GET /admin/orders – Get all placed orders (admin)
+
+🔧 PUT /admin/order/:id – Update order details (admin)
+
+
 
 ## 👨‍💻 Author & Contact
 
