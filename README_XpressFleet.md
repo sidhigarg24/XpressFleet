@@ -109,7 +109,7 @@ Explore the live API collection here:
 - 🧪 **Postman Tested** endpoints for robust API handling.
 
 ---
-**🛠️ Tools & Packages Used**
+🛠️ Tools & Packages Used
 
 ⚙️ Node.js + Express.js – Backend runtime & routing
 
@@ -128,27 +128,9 @@ Explore the live API collection here:
 📦 dotenv – Environment variable configuration
 
 
+📌 APIs Used in XpressFleet (Backend)
 
-
-
-
-
-**📌 APIs Used in XpressFleet (Backend)**
-
-
-
-
-
-
-**📦 Product APIs**
-
-
-
-
-
-
-
-
+📦 Product APIs
 📥 GET /product/products – Retrieve all products (supports pagination)
 
 ➕ POST /product/add – Add a new product
@@ -173,25 +155,7 @@ Explore the live API collection here:
 
 🗑️ DELETE /product/review/:reviewId – Delete a specific review
 
-
-
-
-
-
-
-
-
-
-**👤 User Authentication & Profile APIs**
-
-
-
-
-
-
-
-
-
+👤 User Authentication & Profile APIs
 📝 POST /user/register – Register a new user
 
 🔑 POST /user/login – User login
@@ -208,23 +172,7 @@ Explore the live API collection here:
 
 📝 PUT /user/profile/update – Update name or email
 
-
-
-
-
-
-
-
-
-
-**🛡️ Admin APIs**
-
-
-
-
-
-
-
+🛡️ Admin APIs
 👥 GET /admin/users – Get all users
 
 👤 GET /admin/user/:id – Get single user details
@@ -233,21 +181,7 @@ Explore the live API collection here:
 
 🔧 PUT /admin/user/update – Update user role & profile
 
-
-
-
-
-
-
-****📦 Order APIs**
-
-
-
-
-
-
-
-
+📦 Order APIs
 🛒 POST /order/new – Place a new order
 
 📜 GET /order/:id – Get details of a single order
@@ -257,7 +191,6 @@ Explore the live API collection here:
 📦 GET /admin/orders – Get all placed orders (admin)
 
 🔧 PUT /admin/order/:id – Update order details (admin)
-
 
 
 
