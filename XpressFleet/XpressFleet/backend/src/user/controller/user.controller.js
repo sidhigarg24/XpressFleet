@@ -17,11 +17,11 @@ import {
 import crypto from "crypto";
 
 export const createNewUser = async (req, res, next) => {
-  const { name, email, password } = req.body;
+  const { name, email, password ,role} = req.body;
   try {
 
     const newUser = await createNewUserRepo(req.body);
-   // await sendToken(newUser, res, 200);
+    //await sendToken(newUser, res, 200);
     return res.json({user: newUser});
 
     // Implement sendWelcomeEmail function to send welcome message
