@@ -8,7 +8,8 @@
 
 ## 📌 Objective
 
-You recently joined the startup **'XpressFleet'**, an ambitious instant delivery platform aiming to deliver not only food and groceries, but also electronics, mobile phones, and other essentials — instantly. Your role involved implementing new backend features, integrating real-time functionalities, and optimizing overall performance.
+🚀 Joined XpressFleet — an innovative instant delivery startup revolutionizing the way essentials reach users. From food and groceries to electronics and mobile phones, XpressFleet aims to deliver everything instantly.
+🔧 Contributed by implementing new backend features, integrating real-time functionalities, and optimizing system performance to support seamless and scalable operations.
 
 ---
 
