@@ -54,7 +54,7 @@ userSchema.pre("save", async function (next) {
 
 // JWT Token
 userSchema.methods.getJWTToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_Secret, {
+  return jwt.sign({ id: this._id , role: this.role}, process.env.JWT_Secret, {
     expiresIn: process.env.JWT_Expire,
   });
 };
@@ -73,7 +73,7 @@ userSchema.methods.getResetPasswordToken = async function () {
     .update(resetToken)
     .digest("hex");
 
-  this.resetPasswordExpire = Date.now() + 10 * 60 * 1000;
+  this.resetPasswordExpire = Date.now() + 60 * 60 * 1000;
 
   return resetToken;
 };
