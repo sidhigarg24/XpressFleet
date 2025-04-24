@@ -105,10 +105,15 @@ export const forgetPassword = async (req, res, next) => {
 export const resetUserPassword = async (req, res, next) => {
   const resetToken = req.params.token;
   const { newPassword, confirmPassword } = req.body;
+  // 1. Hash the token
+  const hashedToken = crypto.createHash("sha256").update(resetToken).digest("hex");
 
   try {
-    // Find the user by the reset token
-    const user = await findUserForPasswordResetRepo(resetToken);
+    // 2. Find the user by hashed token and check expiration
+    const user = await findUserRepo({
+      resetPasswordToken: hashedToken,
+      resetPasswordExpire: { $gt: Date.now() }, // Token not expired
+    });
 
     // Check if the user exists and the token is valid
     if (!user) {
@@ -116,7 +121,12 @@ export const resetUserPassword = async (req, res, next) => {
     }
 
     // Update the user's password
+    if (!newPassword || newPassword !== confirmPassword) {
+      return next(new ErrorHandler(400, "Passwords do not match"));
+    }
     user.password = newPassword;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
     await user.save();
 
     // Implement the function to send a notification email (optional)
@@ -219,7 +229,9 @@ export const deleteUser = async (req, res, next) => {
 };
 
 export const updateUserProfileAndRole = async (req, res, next) => {
-  const { userId, newRole, newData } = req.body;
+  const { newRole, newData } = req.body;
+const userId = req.params.id;
+
 
   try {
     // Ensure that the admin has provided the necessary parameters
@@ -238,3 +250,4 @@ export const updateUserProfileAndRole = async (req, res, next) => {
     return next(new ErrorHandler(400, error));
   }
 };
+
