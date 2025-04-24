@@ -48,7 +48,8 @@ router
 // Admin PUT Routes
 // Implement route for updating role of other users
 router
-  .route("/admin/update")
+  .route("/admin/update/:id")
   .put(auth, authByUserRole("admin"), updateUserProfileAndRole);
+
 
 export default router;
